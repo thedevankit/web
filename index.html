@@ -1,4 +1,4 @@
- <!--
+<!--
 Author: W3layouts
 Author URL: http://w3layouts.com
 License: Creative Commons Attribution 3.0 Unported
@@ -16,12 +16,50 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
 <script src="js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript">
+jQuery(window).load(function() { // makes sure the whole site is loaded
+	jQuery("#status").fadeOut(); // will first fade out the loading animation
+	jQuery("#preloader").delay(1000).fadeOut("slow"); // will fade out the white DIV that covers the website.
+})
+
+</script>
+<style>
+html {
+	font: 81.25%/1 arial, helvetica, sans-serif;
+	color: rgb(51, 51, 51);
+	direction: ltr;
+}
+
+#preloader  {
+     position: absolute;
+     top: 0;
+     left: 0;
+     right: 0;
+     bottom: 0;
+     background-color: #fefefe;
+     z-index: 99;
+    height: 100%;
+ }
+
+#status  {
+     width: 200px;
+     height: 200px;
+     position: absolute;
+     left: 50%;
+     top: 50%;
+     background-image: url(ajax-loader.gif);
+     background-repeat: no-repeat;
+     background-position: center;
+     margin: -100px 0 0 -100px;
+ }
+</style>
 
 <!-- animation -->
  <link rel="stylesheet" href="aos.css" />
  <style type="text/css">
 /*
 .ankit{
+
 	color: #fff;
 	font-size: 1.5em;
 	margin: 0 15px;
@@ -58,7 +96,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
  <script type="text/javascript">
 		jQuery(document).ready(function($) {
 			$(".scroll").click(function(event){		
-				event.preventDefault();
+				event.preventDefault();      
 				$('html,body').animate({scrollTop:$(this.hash).offset().top},1200);
 			});
 		});
@@ -66,6 +104,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!--endsmothscrolling-->
 
 </head>
+<div id="preloader">
+  <div id="status">&nbsp;</div>
+</div>
 <body>
 <!--header-->
 	<div class="header ">
@@ -113,9 +154,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							<img src="images/p.png"  class="img-circle img-responsive" alt="/">
 							</div>
 							<div class="col-md-6 cap">
-								<h3>WELCOME TO AN-TECH</h3>  
-								<!-- <p>Lorem ipsum dolor sit amet, consectetuer adipig elit. Praesent vestibulummolestie lacus. Aenean nonummy hendrerit mauris. Phasellus porta. Fuscesuscipit varius mi. Cum sociis natoque penatibus et magnis.</p> -->
-								<!-- <a class="button" data-toggle="modal" data-target="#myModal1" href="#">order online</a> -->
+								<h3>Welcome To An-Tech</h3>  
+								 <p>LEARN TEACH AND INNOVATE<BR>FREE AND OPENSOURCE</p>  
+								 <a class="button" data-toggle="modal" data-target="#myModal1"  >JOIN NOW AN-TECH</a> 
 							</div>
 							</div>
 							<div class="clearfix"></div>
@@ -126,9 +167,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								<img src="images/p1.png"  class="img-circle img-responsive" alt="/">
 							</div>
 							<div class="col-md-6 cap">
-								<h3>we made specially for you </h3> 
-								<!-- <p>df ipsum dolor sit amet, consectetuer adipig elit. Praesent vestibulummolestie lacus. Aenean nonummy hendrerit mauris. Phasellus porta. Fuscesuscipit varius mi. Cum sociis natoque penatibus et magnis.</p>
-								<a class="button" data-toggle="modal" data-target="#myModal1" href="#">order online</a> -->
+								<h3>FROM DESIGN TO DEVELOPMENT</h3> 
+								 <p>BUILD YOUR POWERFUL RESUME.SHEAR YOUR IDEA, DEVELOPED YOUR PRODUCT AND GET CREDITS.</p>
+								<a class="button" data-toggle="modal" data-target="#myModal1" href="#">JOIN NOW AN-TECH</a> -->
 							</div>
 							</div>
 							<div class="clearfix"></div>
@@ -139,9 +180,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							<img src="images/p2.png"  class="img-circle img-responsive" alt="/">
 							</div>
 							<div class="col-md-6 cap">
-								<h3>The highest quality product and servises</h3>
-								<!-- <p>Lorem ipsum dolor sit amet, consectetuer adipig elit. Praesent vestibulummolestie lacus. Aenean nonummy hendrerit mauris. Phasellus porta. Fuscesuscipit varius mi. Cum sociis natoque penatibus et magnis.</p>
-								 -->
+								<h3>YES YOU CAN DO IT YOUR SELF</h3>
+								 <p>BUILD YOUR MINI-PROJECTS ,SEMINARS,PROJECT REPORT,PRESENTATION
+								 WITH STANDERDIESD WAY</p>								
+								 <a class="button" data-toggle="modal" data-target="#myModal1" href="#">JOIN NOW AN-TECH</a> -->
 							</div>
 							</div>
 							<div class="clearfix"></div>
@@ -174,23 +216,23 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									<div class="col-md-4 feature-grid aos-item" data-aos="fade-in">
 										<img src="images/m1.png" class="img-circle img-responsive" alt="/">
 										<div class="rate     ">
-											<h5>Web Development</h5>
+											<h5>Blogs</h5>
 										</div>
 									</div>
 									 <div class="col-md-4 feature-grid aos-item" data-aos="zoom-out-up">
 									<img src="images/m2.png" class=" img-circle img-responsive" alt="/">
 									<div class="rate">
-											<h5>Android Apps</h5>
+											<h5>Seminars</h5>
 										</div>
 									</div> 
 							 
 									<div class="col-md-4 feature-grid aos-item" data-aos="fade-out">
 									<img src="images/m3.png" class="img-circle img-responsive" alt="/">
 									<div class="rate">
-											<h5>Software Development</h5>
+											<h5>Projects</h5>
 										</div>
 									</div>
-									<div class="col-md-4 feature-grid aos-item" data-aos="fade-up">
+									<!-- <div class="col-md-4 feature-grid aos-item" data-aos="fade-up">
 									<img src="images/m4.png" class="img-circle img-responsive" alt="/">
 									<div class="rate">
 											<h5>Java Softwares</h5>
@@ -207,7 +249,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									<div class="rate">
 											<h5>Custom Projects</h5>
 										</div>
-									</div>
+									</div> -->
 									<div class="clearfix"></div>
 								</div>
 							</div>
@@ -217,28 +259,28 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<!--our History-->
 							<div class="history-section" id="about">
 								<div class="container">
-									<h3><span>We</span> Done</h3>
+									<h3><span>Why</span> An-Tech</h3>
 									<div class="history-grids">
 										<div class="col-md-3 history-grid aos-item" data-aos="fade-down">
 											<figure class="icon">
 											<i class="glyphicon glyphicon-ok-sign"></i>
 											</figure>
 											<h5>12</h5>
-											<h6>PROJECTS DILIVERS</h6>										
+											<h6>PROJECTS</h6>										
 										</div>
 										<div class="col-md-3 history-grid aos-item" data-aos="fade-up">
 										<figure class="icon">
 											 <i class="glyphicon glyphicon-thumbs-up"></i>
 											</figure>
 											<h5>200</h5>
-											<h6>POSITIVE REVIEWS</h6>										
+											<h6>BLOGS</h6>										
 										</div>
 										<div class="col-md-3 history-grid aos-item" data-aos="fade-down">
 										<figure class="icon">
 											 <i class="glyphicon glyphicon-flag"></i>
 											</figure>
-											<h5>2</h5>
-											<h6>YEARS OF EXPERIENCE</h6>
+											<h5>100+</h5>
+											<h6>Seminars </h6>
 										</div>
 										<div class="col-md-3 history-grid aos-item" data-aos="fade-up" >
 											<figure class="icon">
@@ -257,46 +299,47 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							<div class="cooking-grids aos-item" data-aos="zoom-out-down">
 								<div class="col-md-4 cook-grid">
 									<div class="cook1">
-										<h3>Our Mission </h3>
-										<p>Providing best servies at low cost </p>
+										<h3>Our Mission </h3><br>
+										
 										<ul>
-											<li><a  >The highest quality</a></li>
-											<li><a >lowest price</a></li>
-											<li><a  >On time product delivery</a></li>
-											<li><a  >100% coustopmer satisfaction</a></li>
-											<li><a >24 *7 Service</a></li>
-											<li><a  >Latest technologies</a></li>
+											<li><a>The highest quality</a></li>
+											 
+											<li><a>On time product delivery</a></li>
+											 
+											<li><a>24 *7 Service</a></li>
+											<li><a>Latest technologies</a></li>
 											<!-- <li><a href="#">Praesent lacinia</a></li> -->
 										</ul>
 									</div>	
 								</div>
 								<div class="col-md-4 cook-grid">
 									<div class="cook2">
-										<h3>Workshops and Seminars</h3>
+										<h3>Seminars And Presentation</h3>
 										<!-- <p>Fratione uptate mseesciun neque porroisqm estrem equia dolorer ntreterase geryiuyasa miertase.</p> --><br>
 										<ul>
-											<li><a  >On php</a></li>
-											<li><a  >On java</a></li>
-											<li><a  >On HTML5 and CSS3</a></li>
-											<li><a  >On C and C++</a></li>
-											<li><a  >On Python</a></li>
-											<li><a  >On Privacy and Security</a></li>
+
+											<li><a> Free of Cost</a></li>
+											<li><a>Wel-Design</a></li>
+											<li><a>Proper-contents</a></li>
+											<li><a>Providing 24*7 support </a></li>
+										
+											<li><a></a></li>
 											<!-- <li><a href="#">Praesent lacinia</a></li> -->
 										</ul>
 									</div>						
 								</div>
 								<div class="col-md-4 cook-grid">
 									<div class="cook3">
-										<h3>Project Guide</h3>
+										<h3>Mini-Project</h3>
 										<p><!-- Fratione uptate mseesciun neque porroisqm estrem equia dolorer ntreterase geryiuyasa miertase. --></p>
 										<ul>
-											<li><a > we provide sponcership</a></li>
-											<li><a href="#">On need technical help</a></li>
-											<li><a href="#">3</a></li>
-											<li><a href="#">4</a></li>
-											<li><a href="#">5</a></li>
-											<li><a href="#">6</a></li>
-											<li><a href="#">7</a></li>
+											<li><a> Free and Opensource</a></li>
+											<li><a>Wel-Design</a></li>
+											<li><a>Proper-contents</a></li>
+											<!-- <li><a>4</a></li>
+											<li><a>5</a></li>
+											<li><a>6</a></li>
+											<li><a>7</a></li> -->
 										</ul>
 									</div>	
 								</div>
@@ -326,10 +369,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 										<li>
 											<div class="ch-item aos-item" data-aos="flip-right">
 												<div class="ch-info">
-													<div class="ch-info-front ch-img-4"></div>
+													<div class="ch-info-front ch-img-3"></div>
 													<div class="ch-info-back">
 															<h4>TESTER</h4>
-														<p>your name  <a href="#">consectetur</a></p>
+														<p>Lorem ipsum  <a href="#">consectetur</a></p>
 													</div>
 												</div>
 											</div>
@@ -337,10 +380,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 										<li>
 											<div class="ch-item aos-item" data-aos="flip-right">
 												<div class="ch-info">
-													<div class="ch-info-front ch-img-4"></div>
+													<div class="ch-info-front ch-img-2"></div>
 													<div class="ch-info-back">
 															<h4>DEVELOPER</h4>
-														<p>your name  <a href="#">consectetur</a></p>
+														<p>Lorem ipsum  <a href="#">consectetur</a></p>
 													</div>
 												</div>
 											</div>
@@ -348,10 +391,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 										 <li>
 											<div class="ch-item aos-item" data-aos="flip-right">
 												<div class="ch-info">
-													<div class="ch-info-front ch-img-4"></div>
+													<div class="ch-info-front ch-img-1"></div>
 													<div class="ch-info-back">
 															<h4>TESTER</h4>
-														<p>your name  <a href="#">consectetur</a></p>
+														<p>Lorem ipsum  <a href="#">consectetur</a></p>
 													</div>
 												</div>
 											</div>
@@ -369,12 +412,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 											<div class="col-md-4 new-grid">
 												 <a href="#" class="mask"><img src="images/n1.jpg" alt="image" class="img-responsive zoom-img"></a>
 												 <h4><a href="#">MOZILLA PRIVACY MONTH</a></h4>
-												<p>privacy and </p>
+												<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed blandit massa…</p>
 											</div>
 											<div class="col-md-4 new-grid">
 											<a href="#" class="mask"><img src="images/n2.jpg" alt="image" class="img-responsive zoom-img"></a>
 												 <h4><a href="#">FIRST PRIZE IN IGNITRA</a></h4>
-												<p> activites done by antech</p>
+												<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed blandit massa…</p>
 											</div>
 											<div class="col-md-4 new-grid">
 											<a href="#" class="mask"><img src="images/n3.jpg" alt="image" class="img-responsive zoom-img"></a>
@@ -395,28 +438,28 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									<div class="last1">
 										 <a href="#" class="mask"><img src="images/g7.jpg" alt="image" class="img-responsive zoom-img"></a>
 										<h4>MOZILLA PRIVACY MONTH </h4>
-										<p>blogs from wordpress and blogger .</p>
+										<p>Est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepiu .</p>
 									</div>
 								</div>	
 								<div class="col-md-3 last-grid">
 									<div class="last1">
 										<a href="#" class="mask"><img src="images/g5.jpg" alt="image" class="img-responsive zoom-img"></a>
 										<h4>PASSPHARASE ULTIMATE PROTECTION</h4>
-										<p>blogs from wordpress and blogger</p>
+										<p>Est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepiu .</p>
 									</div>
 								</div>	
 								<div class="col-md-3 last-grid">
 									<div class="last1">
 										<a href="#" class="mask"><img src="images/g2.jpg" alt="image" class="img-responsive zoom-img"></a>
 										<h4>HOW TO SECURE PRIVATE DATA</h4>
-										<p>blogs from wordpress and blogger</p>
+										<p>Est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepiu .</p>
 									</div>
 								</div>	
 								<div class="col-md-3 last-grid">
 									<div class="last1">
 										<a href="#" class="mask"><img src="images/g4.jpg" alt="image" class="img-responsive zoom-img"></a>
 										<h4>HOW TO BE POSITIVE </h4>
-										<p>blogs from wordpress and blogger</p>
+										<p>Est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepiu .</p>
 									</div>
 								</div>	
 								<div class="clearfix"></div>
@@ -462,7 +505,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									 <input type="submit" value="send">
 								 </form>
 							</div>
-							<div class="col-md-6 contact-left aos-item" data-aos="flip-right">
+							<div class="col-md-6 contact-left">
 								<p><br>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below 
 									for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum
 									 et Malorum" by Cicero are also reproduced in their exact original form, 
@@ -584,8 +627,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 												</li>
 											</ul>  -->
 												<ul>
-													<li><input class="text-box-dark" type="text" value="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}"></li>
-													<li><input class="text-box-dark" type="text" value="Password" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Password';}"></li>
+													<li><input class="text-box-dark" type="text" value="Email" onfocus="this.value = '';"></li>
+													<li><input class="text-box-dark" type="password" value="Password"  placeholder="Enter password"></li>
 												</ul>
 												<!-- <ul class="payment-type">
 													<li><input class="text-box-dark" type="text" value="ENTER EMAIL" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Card Number';}"></li>
